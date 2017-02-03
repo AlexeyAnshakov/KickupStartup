@@ -5,6 +5,14 @@ import { render } from 'react-dom';
 import { renderRoutes } from '../imports/startup/client/routes.js';
 
 Meteor.startup(() => {
+
+      var require = __meteor_bootstrap__.require;
+      var path = require('path');
+      var base = path.resolve('.');
+      var isBundle = path.existsSync(base + '/bundle');
+      var modulePath = base + (isBundle ? '/bundle/static' : '/public') + '/node_modules';
+
+      var MODULE_NAME = require(modulePath + '/MODULE_NAME');
   // initialize smooth scroll library
   smoothScroll.init();
   $('body').addClass('page');
