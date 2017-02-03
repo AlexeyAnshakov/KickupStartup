@@ -1,8 +1,9 @@
 {
   "presets": [
-    "react"
+    ["react"]
   ],
   "plugins": [
     "babel-root-slash-import"
   ]
+
 }

@@ -33,7 +33,7 @@ class App extends Component {
     if (this.props.loading) {
       return (
         <div></div>
-      );
+      )
     } else {
       return (
       <div>
@@ -57,24 +57,24 @@ class App extends Component {
           </div>
         </div>
 
-          <div id="modal" className="modal bottom-sheet">
-            <div className="modal-content">
-              <a href="#!" className="modal-action modal-close default pull-right"><i className="fa fa-remove fa-lg"></i></a>
-              <h3>Create</h3>
-              <div className="content modal-create">
-                <ul className="collection">
-                  <li className="collection-item avatar" onClick={this.handleIdeaCreate}>
-                    <i className="fa fa-lightbulb-o circle"></i>
-                    <span className="title">Idea</span>
-                    <p>
-                      Для создания amazing стартапа необходима проверенная идея, иначе вы рискуете разработать не востребованный рынком продукт или сервис.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+        <div id="modal" className="modal bottom-sheet">
+          <div className="modal-content">
+            <a href="#!" className="modal-action modal-close default pull-right"><i className="fa fa-remove fa-lg"></i></a>
+            <h3>Create</h3>
+            <div className="content modal-create">
+              <ul className="collection">
+                <li className="collection-item avatar" onClick={this.handleIdeaCreate}>
+                  <i className="fa fa-lightbulb-o circle"></i>
+                  <span className="title">Idea</span>
+                  <p>
+                    Для создания amazing стартапа необходима проверенная идея, иначе вы рискуете разработать не востребованный рынком продукт или сервис.
+                  </p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
       );
     }
   }
